@@ -1,0 +1,211 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: linear-gradient(180deg, #efe2c4, #d8c29d);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #3d2b1f;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 250, 240, 0.95);
+    border: 4px solid #b8860b;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   TELA INICIAL
+========================= */
+
+#inicio {
+    text-align: center;
+}
+
+#inicio h1 {
+    font-size: 3rem;
+    color: #7a4f01;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.frase-magica {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #6b4423;
+}
+
+/* =========================
+   BOTÃO INICIAR
+========================= */
+
+#btnIniciar {
+    background-color: #b8860b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnIniciar:hover {
+    background-color: #966b00;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   QUIZ
+========================= */
+
+#quiz h1 {
+    text-align: center;
+    color: #7a4f01;
+    margin-bottom: 15px;
+}
+
+#quiz .descricao {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   PERGUNTAS
+========================= */
+
+.pergunta {
+    background-color: #fffdf6;
+    border-left: 6px solid #d4a017;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.pergunta h2 {
+    color: #5c3b0c;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.pergunta label {
+    display: block;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pergunta label:hover {
+    background-color: #f7e7b4;
+}
+
+.pergunta input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* =========================
+   BOTÃO RESULTADO
+========================= */
+
+#botaoResultado {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+
+    background-color: #b8860b;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#botaoResultado:hover {
+    background-color: #966b00;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   RESULTADO
+========================= */
+
+#resultado {
+    display: none;
+    margin-top: 35px;
+
+    background-color: #fffdf6;
+    border: 2px solid #d4a017;
+    border-radius: 15px;
+
+    padding: 25px;
+}
+
+#resultado h2 {
+    text-align: center;
+    color: #7a4f01;
+    margin-bottom: 20px;
+}
+
+#resultado p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+#casaFinal {
+    text-align: center;
+    margin-top: 25px;
+    color: #5c3b0c;
+    font-size: 1.5rem;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    #inicio h1,
+    #quiz h1 {
+        font-size: 2rem;
+    }
+
+    .pergunta h2 {
+        font-size: 1.05rem;
+    }
+
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapéu Seletor de Hogwarts</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+
+        <section id="inicio">
+
+            <h1>🏰 Chapéu Seletor de Hogwarts</h1>
+
+            <p class="descricao">
+                Há mais de mil anos, os fundadores de Hogwarts criaram quatro casas
+                para receber os alunos da escola de magia e bruxaria.
+            </p>
+
+            <p class="descricao">
+                Responda às perguntas abaixo e descubra qual casa combina mais com
+                sua personalidade.
+            </p>
+
+            <p class="frase-magica">
+                ✨ "Hum... interessante... Vejo muito potencial em você."
+            </p>
+
+            <button id="btnIniciar">
+                Iniciar Teste
+            </button>
+
+        </section>
+
+        <!-- QUIZ -->
+
+        <form id="quiz" style="display: none;">
+
+            <header>
+                <h1>🏰 Chapéu Seletor de Hogwarts</h1>
+
+                <p class="descricao">
+                    Responda todas as perguntas para descobrir sua casa.
+                </p>
+            </header>
+
+            <!-- Pergunta 1 -->
+
+            <div class="pergunta">
+                <h2>1. O que você mais valoriza?</h2>
+
+                <label>
+                    <input type="radio" name="q1" value="grifinoria">
+                    Coragem
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="sonserina">
+                    Ambição
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="corvinal">
+                    Inteligência
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="lufalufa">
+                    Lealdade
+                </label>
+            </div>
+
+            <!-- Pergunta 2 -->
+
+            <div class="pergunta">
+                <h2>2. Qual matéria você escolheria?</h2>
+
+                <label>
+                    <input type="radio" name="q2" value="grifinoria">
+                    Defesa Contra as Artes das Trevas
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="sonserina">
+                    Poções
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="corvinal">
+                    Feitiços
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="lufalufa">
+                    Herbologia
+                </label>
+            </div>
+
+            <!-- Pergunta 3 -->
+
+            <div class="pergunta">
+                <h2>3. Como seus amigos te descrevem?</h2>
+
+                <label>
+                    <input type="radio" name="q3" value="grifinoria">
+                    Corajoso
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="sonserina">
+                    Determinado
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="corvinal">
+                    Criativo
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="lufalufa">
+                    Gentil
+                </label>
+            </div>
+
+            <!-- Pergunta 4 -->
+
+            <div class="pergunta">
+                <h2>4. O que você faria ao encontrar um desafio?</h2>
+
+                <label>
+                    <input type="radio" name="q4" value="grifinoria">
+                    Enfrentaria imediatamente
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="sonserina">
+                    Procuraria uma estratégia
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="corvinal">
+                    Analisaria todas as possibilidades
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="lufalufa">
+                    Trabalharia em equipe
+                </label>
+            </div>
+
+            <!-- Pergunta 5 -->
+
+            <div class="pergunta">
+                <h2>5. Qual lugar de Hogwarts você visitaria primeiro?</h2>
+
+                <label>
+                    <input type="radio" name="q5" value="grifinoria">
+                    Campo de Quadribol
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="sonserina">
+                    Masmorras
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="corvinal">
+                    Biblioteca
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="lufalufa">
+                    Cozinha dos Elfos Domésticos
+                </label>
+            </div>
+
+            <!-- Pergunta 6 -->
+
+            <div class="pergunta">
+                <h2>6. Se você encontrasse uma sala secreta em Hogwarts, o que faria?</h2>
+
+                <label>
+                    <input type="radio" name="q6" value="grifinoria">
+                    Entraria imediatamente para explorar
+                </label>
+
+                <label>
+                    <input type="radio" name="q6" value="sonserina">
+                    Tentaria usar a descoberta a seu favor
+                </label>
+
+                <label>
+                    <input type="radio" name="q6" value="corvinal">
+                    Pesquisaria tudo antes de entrar
+                </label>
+
+                <label>
+                    <input type="radio" name="q6" value="lufalufa">
+                    Chamaria seus amigos para explorar juntos
+                </label>
+            </div>
+
+            <button type="button" id="botaoResultado">
+                ✨ Ver Resultado
+            </button>
+
+        </form>
+
+        <!-- RESULTADO -->
+
+        <section id="resultado">
+
+            <h2>🏆 Resultado do Chapéu Seletor</h2>
+
+            <p id="grifinoria"></p>
+            <p id="sonserina"></p>
+            <p id="corvinal"></p>
+            <p id="lufalufa"></p>
+
+            <h3 id="casaFinal"></h3>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
